@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/NavBar.css"
+import ReorderIcon from "@mui/icons-material/Reorder"
 
 function Navbar() {
   return (
@@ -7,15 +8,16 @@ function Navbar() {
 
     <header id="home">
        <nav class="navbar" id="nav-wrap">
-          {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-        <a className="mobile-btn" href="youtube.com" title="Hide navigation">Hide navigation</a> */}
-          <ul className="links">
+        <div className="toggleButton">
+            <button><ReorderIcon /></button>
+        </div>
+          <div className="links">
              <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-             <li><a className="smoothscroll" href="#about"> About</a></li>
+             <li><a className="smoothscroll" href="#about">About</a></li>
            <li><a className="smoothscroll" href="#resume">Resume</a></li>
              <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
              <li><a className="smoothscroll" href="#contact">Contact</a></li>
-          </ul>
+          </div>
        </nav>
 
        <p className="scrolldown">
